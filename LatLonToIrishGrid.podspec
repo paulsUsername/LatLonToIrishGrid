@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
-                       DESC
+                "Convert Latitude and Longitude to Irish Grid Reference (EPSG:29903)"
 
   s.homepage         = 'https://github.com/paulsusername/LatLonToIrishGrid'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
