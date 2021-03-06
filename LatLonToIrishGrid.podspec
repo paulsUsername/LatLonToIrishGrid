@@ -9,13 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = 'LatLonToIrishGrid'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LatLonToIrishGrid.'
+  s.summary          = 'Convert Latitude and Longitude to Irish Grid Reference (EPSG:29903)'
 
 # This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+#   Convert Latitude and Longitude to Irish Grid Reference (EPSG:29903)
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -32,11 +29,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'LatLonToIrishGrid/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'LatLonToIrishGrid' => ['LatLonToIrishGrid/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'LatLonToIrishGrid' => ['LatLonToIrishGrid/Assets/*.js']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'CoreLocation', 'JavaScriptCore'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

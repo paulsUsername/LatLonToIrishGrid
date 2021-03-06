@@ -9,18 +9,22 @@
 /* Begin PBXBuildFile section */
 		3EAFB7E41EB050CA226B7205 /* Pods_LatLonToIrishGrid_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591439CBAC2FFCEC61A6854D /* Pods_LatLonToIrishGrid_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8248657F25F41EB700D518CA /* LatLonToIrishGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248657E25F41EB700D518CA /* LatLonToIrishGrid.swift */; };
+		8248658525F41F0600D518CA /* proj4.js in Resources */ = {isa = PBXBuildFile; fileRef = 8248658425F41F0600D518CA /* proj4.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3211ADFF97600914159E9FAE /* LatLonToIrishGrid.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LatLonToIrishGrid.podspec; path = ../LatLonToIrishGrid.podspec; sourceTree = "<group>"; };
-		390C16193285A538D890BAE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3211ADFF97600914159E9FAE /* LatLonToIrishGrid.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LatLonToIrishGrid.podspec; path = ../LatLonToIrishGrid.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		390C16193285A538D890BAE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4676D9573128E8FB99F7C2CE /* Pods-LatLonToIrishGrid_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatLonToIrishGrid_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LatLonToIrishGrid_Tests/Pods-LatLonToIrishGrid_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		591439CBAC2FFCEC61A6854D /* Pods_LatLonToIrishGrid_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LatLonToIrishGrid_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* LatLonToIrishGrid_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LatLonToIrishGrid_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		8248657E25F41EB700D518CA /* LatLonToIrishGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatLonToIrishGrid.swift; sourceTree = "<group>"; };
+		8248658425F41F0600D518CA /* proj4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = proj4.js; sourceTree = "<group>"; };
 		CF360DD9B2CD1F72AECE800F /* Pods-LatLonToIrishGrid_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatLonToIrishGrid_Tests.release.xcconfig"; path = "Target Support Files/Pods-LatLonToIrishGrid_Tests/Pods-LatLonToIrishGrid_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E6BA9F946C1494FA572DA6A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E6BA9F946C1494FA572DA6A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,13 +53,14 @@
 				4676D9573128E8FB99F7C2CE /* Pods-LatLonToIrishGrid_Tests.debug.xcconfig */,
 				CF360DD9B2CD1F72AECE800F /* Pods-LatLonToIrishGrid_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				8248658325F41EED00D518CA /* Assets */,
+				8248658225F41EC500D518CA /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -99,6 +104,22 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		8248658225F41EC500D518CA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8248657E25F41EB700D518CA /* LatLonToIrishGrid.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8248658325F41EED00D518CA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8248658425F41F0600D518CA /* proj4.js */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,10 +152,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +164,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -165,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8248658525F41F0600D518CA /* proj4.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8248657F25F41EB700D518CA /* LatLonToIrishGrid.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
