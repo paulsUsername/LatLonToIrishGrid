@@ -1,0 +1,6 @@
+use_frameworks!
+target 'LatLonToIrishGrid_Tests' do
+  pod 'LatLonToIrishGrid', :path => '../'
+  
+  
+end
