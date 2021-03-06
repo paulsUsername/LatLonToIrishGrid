@@ -27,3 +27,4 @@ paulsusername, paul@hiiker.co
 ## License
 
 LatLonToIrishGrid is available under the MIT license. See the LICENSE file for more info.
+# LatLonToIrishGrid
